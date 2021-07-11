@@ -1,0 +1,34 @@
+=================
+STYLED COMPONENTS
+=================
+
+- combinação de tag e template literal e o poder do css para estilizar componentes
+- mapeia quais os componentes que vão ser apresentados na template
+- e mapeia apenas o estilo e nada mais
+- permite que o usuário carregue a aplicação somente com o código necessário
+- gera nomes de classes únicos para os estilos
+- se livra de conflitos
+- manutenção é mais fácil
+
+@import
+- dentro do index.html via tag de link
+
+GlobalStyle
+- componente de estilos globais
+- é aonde vai o "reset"
+- colocar a tag do componente acima dos outros no App.js
+
+Pasta UI
+- estilos reutilizáveis a todos: como icones e variáveis
+
+Herança
+- quando um componente tem quase que tudo do pai porém tem algo único só dele
+    . ex: icone que tem uma margem extra
+- cria um componente que herda de outro e apenas adiciona nele o que é diferente
+    . ex:
+    const IconeMargin = styled(Icone)`
+        margintop: 2px;
+    `;
+    . ou seja, em vez de passar styled.tag html
+    . passa entre () o seu pai
+
